@@ -71,13 +71,13 @@ img{
 
 .text-content h4{
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 10%;
 }
 
 #proccessBar {
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 45%;
     width: 60%
 }
@@ -91,4 +91,10 @@ img{
 
 .text-content i{
     margin: auto .5rem;
+}
+
+/* pricing */
+
+#mt{
+    margin: 5rem auto 7rem auto;
 }
