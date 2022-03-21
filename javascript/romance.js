@@ -10,7 +10,7 @@ let songs = [
     { songName: "Arijit Singh -Agar Tum Sath Ho", filePath: "songs/romance/r5.mp3", coverPath: "../img/romance/r5.jpg" },
     { songName: "Arijit Singh -Hamdard", filePath: "songs/romance/r6.mp3", coverPath: "../img/romance/r6.jpg" },
     { songName: "Arijit Singh -Phir Kabhi", filePath: "songs/romance/r7.mp3", coverPath: "../img/romance/r7.jpg" },
-    { songName: "Arijit Singh -Galti Se Mistake", filePath: "songs/romance/r8.mp3", coverPath: "../img/romance/r8.jpg" },
+    { songName: "Tanishk Bagchi -Raataan Lambiyan", filePath: "songs/romance/r8.mp3", coverPath: "../img/romance/r8.jpg" },
     { songName: "Arijit Singh -Kabira", filePath: "songs/romance/r9.mp3", coverPath: "../img/romance/r9.jpg" },
     { songName: "Arijit Singh -Naina", filePath: "songs/romance/r10.mp3", coverPath: "../img/romance/r10.jpg" },
     { songName: "Arijit Singh -Kedarnath ", filePath: "songs/romance/r11.mp3", coverPath: "../img/romance/r11.jpg" },
