@@ -2,7 +2,7 @@ console.log("Jai shree ram");
 console.log("Welcome to music player");
 
 let songs = [
-    { songName: "Ariana Grande -34+35", filePath: "../songs/naughty/n0.mp3", coverPath: "../img/naughty/h0.jpg" },
+    { songName: "Ariana Grande -34+35", filePath: "../songs/naughty/n0.mp3", coverPath: "../img/naughty/n0.jpg" },
     { songName: "Doja cat -Kiss me more", filePath: "../songs/naughty/n1.mp3", coverPath: "../img/naughty/n1.jpg" },
     { songName: "Neha kakkar -Dilbar", filePath: "../songs/naughty/n2.mp3", coverPath: "../img/naughty/n2.jpg" },
     { songName: "Aastha Gill -Kamariya", filePath: "../songs/naughty/n3.mp3", coverPath: "../img/naughty/n3.jpg" },
