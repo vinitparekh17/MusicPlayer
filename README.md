@@ -4,23 +4,56 @@ A simple Node.js-based API Gateway for managing music playlists with file upload
 
 ## Project Structure
 
-```
+```bash
+cmd: tree ./MusicPlayer -I "node_modules|.git|img|data/songs"
+output:
 ./MusicPlayer
 ├── data
-│   ├── songs/              // Uploaded song files (organized by category)
-│   │   ├── romance/
-│   │   ├── hollywood/
-│   │   └── naughty/
-│   └── songs.json          // Song database
-├── gateway.js              // Main API server
-├── img/                    // Thumbnail images (organized by category)
-│   ├── romance/
-│   ├── hollywood/
-│   └── naughty/
+│   ├── songs
+│   │   ├── h0.mp3
+│   │   ├── h1.mp3
+│   │   ├── h2.mp3
+│   │   ├── h3.mp3
+│   │   ├── h4.mp3
+│   │   ├── h5.mp3
+│   │   ├── h6.mp3
+│   │   ├── h7.mp3
+│   │   ├── h8.mp3
+│   │   ├── h9.mp3
+│   │   ├── n0.mp3
+│   │   ├── n1.mp3
+│   │   ├── n2.mp3
+│   │   ├── n3.mp3
+│   │   ├── n4.mp3
+│   │   ├── n5.mp3
+│   │   ├── n6.mp3
+│   │   ├── n7.mp3
+│   │   ├── n8.mp3
+│   │   ├── n9.mp3
+│   │   ├── r0.mp3
+│   │   ├── r10.mp3
+│   │   ├── r11.mp3
+│   │   ├── r1.mp3
+│   │   ├── r2.mp3
+│   │   ├── r3.mp3
+│   │   ├── r4.mp3
+│   │   ├── r5.mp3
+│   │   ├── r6.mp3
+│   │   ├── r7.mp3
+│   │   ├── r8.mp3
+│   │   └── r9.mp3
+│   └── songs.json
+├── gateway.js
+├── img
 ├── package.json
+├── package-lock.json
+├── README.md
 └── routes
-    ├── index.js            // Main router
-    └── songsApi.js         // Song API logic
+    ├── index.js
+    └── songsApi.js
+
+5 directories, 39 files
+
 ```
 
 ## Installation
@@ -86,7 +119,7 @@ Add a new song (JSON only)
 ```bash
 curl -i -X POST http://localhost:3000/api/songs/ \
   -H "Content-Type: application/json" \
-  -d '{"singer": "Artist Name", "songName": "New Song", "category": "romance", "filePath": "songs/romance/r12.mp3", "coverPath": "img/romance/r12.jpg"}'
+  -d '{"singer": "Artist Name", "songName": "New Song", "category": "romance", "filePath": "songs/r12.mp3", "coverPath": "img/r12.jpg"}'
 ```
 
 ### POST /api/songs/upload
@@ -104,7 +137,7 @@ curl -i -X POST http://localhost:3000/api/songs/upload \
 **Note:**
 - The `song` field is required (MP3 file)
 - The `thumbnail` field is optional (JPG/PNG image)
-- Files will be automatically saved to `data/songs/{category}/` and `img/{category}/`
+- Files will be automatically saved to `data/songs/` and `img/`
 - File paths will be automatically generated and stored in JSON
 - If category is not specified, defaults to 'romance'
 
